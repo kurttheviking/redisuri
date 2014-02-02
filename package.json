@@ -1,0 +1,28 @@
+{
+  "name": "bluecache",
+  "description": "Validate and parse Redis URI connection schemes",
+  "version": "0.0.0",
+  "author": "AgileMD <hello@agilemd.com>",
+  "contributors": [
+    "agilekurt <kurt@agilemd.com>",
+    "agilemd <doc@agilemd.com>"
+  ],
+  "keywords": [
+    "redis",
+    "redis uri",
+    "redisuri"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha"
+  },
+  "repository": "git@github.com:agilemd/redisuri.git",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "1.9.0",
+    "mocha": "1.17.0"
+  },
+  "readmeFilename": "README.md",
+  "license": "MIT"
+}
