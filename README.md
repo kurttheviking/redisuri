@@ -24,8 +24,10 @@ Parse the passed `uri` into an object containing four properties: `auth`, `host`
 ```
 var redisuri = require('redisuri');
 
-console.log(redisuri.validate('redis://localhost:6379'));  // => { auth: null, host: 'localhost', port: 6379, db: 0 }
-console.log(redisuri.validate('redis://authstring@192.168.1.1:6379/7'));  // => { auth: authstring, host: '192.168.1.1', port: 6379, db: 7 }
+console.log(redisuri.validate('redis://localhost:6379'));
+// => { auth: null, host: 'localhost', port: 6379, db: 0 }
+console.log(redisuri.validate('redis://authstring@192.168.1.1:6379/7'));
+// => { auth: authstring, host: '192.168.1.1', port: 6379, db: 7 }
 ```
 
 **validate(uri)**
@@ -38,8 +40,10 @@ var redisuri = require('redisuri');
 var uri = 'redis://localhost:6379';
 var bad = 'localhost';
 
-console.log(redisuri.validate(uri));  // => 'redis://localhost:6379'
-console.log(redisuri.validate(bad));  // => TypeError: A protocol must be specified in the Redis URI connection scheme (e.g. redis:)
+console.log(redisuri.validate(uri));
+// => 'redis://localhost:6379'
+console.log(redisuri.validate(bad));
+// => TypeError: A protocol must be specified in the Redis URI connection scheme (e.g. redis:)
 ```
 
 ### Tests
