@@ -28,6 +28,7 @@ describe('redisURI ->', function () {
   it('validates good redis uris', function () {
     goodURIs.forEach(function (_uri) {
       chai.expect(function () { return redisURI.validate(_uri); }).to.not.throw(Error);
+      chai.expect(redisURI.validate(_uri)).to.equal(_uri);
     });
   });
 
