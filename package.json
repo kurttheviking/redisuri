@@ -1,11 +1,10 @@
 {
   "name": "redisuri",
   "description": "Validate and parse Redis URI connection schemes",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "AgileMD <hello@agilemd.com>",
   "contributors": [
-    "agilekurt <kurt@agilemd.com>",
-    "agilemd <doc@agilemd.com>"
+    "kurttheviking <kurttheviking@outlook.com>"
   ],
   "keywords": [
     "redis",
@@ -16,7 +15,7 @@
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha"
   },
-  "repository": "git@github.com:agilemd/redisuri.git",
+  "repository": "git@github.com:kurttheviking/redisuri.git",
   "dependencies": {
   },
   "devDependencies": {
