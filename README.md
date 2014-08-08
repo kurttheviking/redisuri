@@ -56,6 +56,7 @@ console.log(redisuri.validate(bad));
 Production ready. To run the full unit test suite:
 
 ```
+npm install
 npm test
 ```
 
