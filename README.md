@@ -8,11 +8,13 @@ Validate and parse Redis URI connection schemes
 
 The URI connection scheme expects the following parameters:
 
-- `redis://`: **Required.** A protocol prefix to indentifying this as URI connection format
-- `auth@`: Optional. If specified, [AUTH password](http://redis.io/commands/AUTH) used to connect to the redis database
-- `host`: **Required.** A network location (e.g. hostname or IP address) of the redis server
-- `:port`: Optional. The server port assigned to the redis process; defaults to `6379`
-- `/database`: Optional. An available redis database number; defaults to `0`
+| Component   | Required?    | Description |
+| :---------- | :----------- | :---------- |
+| `redis://`  | **Required** | A protocol prefix to indentifying this as URI connection format |
+| `auth@`     |              | [AUTH password](http://redis.io/commands/AUTH) to connect to the redis instance |
+| `host`      | **Required** | A network location (e.g. hostname or IP address) of the redis server |
+| `:port`     |              | The server port assigned to the redis process; defaults to `6379` |
+| `/database` |              | An available redis database number; defaults to `0` |
 
 
 ### API
@@ -48,11 +50,15 @@ console.log(redisuri.validate(bad));
 // => TypeError: A protocol must be specified in the Redis URI connection scheme (e.g. redis:)
 ```
 
+
 ### Tests
+
+Production ready. To run the full unit test suite:
 
 ```
 npm test
 ```
+
 
 ### Contribute
 
